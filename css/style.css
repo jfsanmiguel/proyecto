@@ -1,0 +1,192 @@
+/* estilo propio para el sitio web */
+/* fuente interna*/
+@font-face {
+    font-family: "belleza";
+    src: url(../resources/font/Belleza-Regular.ttf);
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "belleza";
+
+}
+
+header {
+    min-height: 13vh;
+    background-color: #e7ecef;
+    color: #272932;
+}
+
+/* main */
+main {
+    min-height: 80vh;
+    background-color: #272932;
+    color: #e7ecef;
+}
+
+/* footer */
+footer {
+    min-height: 7vh;
+    background-color: #9684a1;
+}
+
+.foot {
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.redes {
+    width: 45px;
+    margin: 7px;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+
+}
+
+.terms p {
+    margin: 15px;
+}
+
+/* barra navegación */
+.logo {
+    width: 80px;
+    margin: 5px;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    width: 92vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: x-large;
+}
+
+.menu a {
+    color: #272932;
+    text-decoration: none;
+
+}
+
+/* encabezado */
+.encabezado {
+    text-align: center;
+    color: #bb342f;
+}
+
+/* index */
+.index-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.index-div {
+    width: 20vw;
+}
+
+.index-div p {
+    width: 15vw;
+    font-size: medium;
+    text-align: justify;
+}
+
+.img-seccion {
+    width: 20vw;
+
+}
+
+/* bazar */
+h4 {
+    margin-left: 50px;
+}
+
+.bazar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin: auto;
+
+}
+
+.bazar-grid p {
+    width: 75%;
+
+}
+
+.categorias {
+    grid-area: 1 / 1 / 4 / 2;
+
+}
+
+.categorias li {
+    margin: 50px;
+}
+
+.video {
+    grid-area: 4 / 1 / 7 / 2;
+
+
+}
+
+.fila-1 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: 1 / 2 / 3 / 6;
+
+}
+
+.fila-2 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: 3 / 2 / 5 / 6;
+
+
+}
+
+.fila-3 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: 5 / 2 / 7 / 6;
+    margin-bottom: 30px;
+
+}
+
+.item {
+    max-width: 75%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+}
+
+/* expresion */
+/* conexion */
+/* identidad */
+/* estrategia mobile last ----maxwidth*/
+@media (max-width: 420px) {
+    .navi {
+        justify-content: center;
+    }
+
+    .fila-1,
+    .fila-2,
+    .fila-3 {
+        flex-wrap: wrap;
+    }
+}

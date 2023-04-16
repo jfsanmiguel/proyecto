@@ -176,6 +176,19 @@ h4 {
 }
 
 /* expresion */
+.galeria{
+    max-width: 25%;
+    margin: auto;
+    
+}
+.imagen{
+    width: 25vw;
+    
+}
+.informacion{
+    text-align: center;
+    font-size: large;
+}
 /* conexion */
 /* identidad */
 /* estrategia mobile last ----maxwidth*/

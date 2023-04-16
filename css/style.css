@@ -14,7 +14,7 @@
 }
 
 header {
-    min-height: 13vh;
+    min-height: 6vh;
     background-color: #e7ecef;
     color: #272932;
 }
@@ -99,11 +99,18 @@ footer {
     color: #bb342f;
 }
 
+
 /* index */
 .index-flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.primero{
+margin-left: 20px;
+}
+.ultimo{
+margin-right: 20px;
 }
 
 .index-div {
@@ -210,6 +217,57 @@ h4 {
     font-size: large;
 }
 /* conexion */
+
+    
+    .conection {
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: center;
+        }
+        
+        .contacto { grid-area: 1 / 1 / 6 / 2; }
+        .request { grid-area: 1 / 2 / 6 / 3; }
+    .comun{
+        width: 120px;
+        padding: 10px;
+        margin: 20px;
+    }
+    .gif{
+        max-width: 40vw;
+    }
+ 
+    .form-flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .parte{
+        margin: 10px;
+        padding: 5px;
+    }
+    .info{
+        width: 20vw;
+    }
+    .descripcion{
+        min-height: 200px;
+        width: 20vw;
+    }
+    .boton{
+        background-color: #9684a1;
+        color: #272932;
+        font-weight: bold;
+        width: 5vw;
+    }
+    .boton:hover{
+        background-color: #119da4;
+        color: #e7ecef;
+        font-weight: bolder;
+        transform: scale(1.13);
+    }
+    
 /* identidad */
 /* animaciones */
   @keyframes fade-entrada {
@@ -244,6 +302,9 @@ h4 {
   
 /* estrategia mobile last ----maxwidth*/
 @media (max-width: 420px) {
+    p{
+        font-size: small;
+    }
     .navi {
         justify-content: center;
     }

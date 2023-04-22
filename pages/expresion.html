@@ -17,26 +17,34 @@
 <body>
     <!-- header de expresion -->
     <header>
-        <!-- barra de navegación de-->
-        <nav class="navi">
-            <!-- logo -->
-            <a href="../index.html"><img class="logo" src="../resources/images/1.png" alt="Logo Asiripoyo"></a>
-
-            <ul class="menu">
-                <li><a href="../pages/bazar.html">Bazar</a></li>
-                <li><a href="../pages/expresion.html">Expresión</a></li>
-                <li><a href="../pages/identidad.html">Identidad</a></li>
-                <li><a href="../pages/conexion.html">Conexión</a></li>
-            </ul>
+        <!-- barra de navegación de expresion-->
+        <nav class="navbar navbar-expand-lg" style="background-color: #e7ecef;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../resources/images/Asiripoyo.png"
+                        alt="Logo Asiripoyo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../pages/bazar.html">Bazar</a>
+                        <a class="nav-link" href="../pages/expresion.html">Expresión</a>
+                        <a class="nav-link" href="../pages/identidad.html">Identidad</a>
+                        <a class="nav-link" href="../pages/conexion.html">Conexión</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- main de expresion -->
     <main>
         <h1 class="encabezado">Expresión</h1>
         <!-- carrusel fotos -->
-        <div id="carouselArtFade" class="carousel slide carousel-fade galeria">
-            <div class="carousel-inner">
-                <div class="carousel-item active item">
+        <div id="carouselArtFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner gal-div">
+                <div class="carousel-item active">
                     <img class="imagen" src="../resources/images/flamingo.jpg" class="d-block w-100"
                         alt="foto flamingo">
                     <h5>Foto flamingo</h5>
@@ -78,8 +86,8 @@
                 enviar tus redes sociales para añadirlas a las publicaciones.</p>
         </article>
         <!-- carrusel dibujos -->
-        <div id="carouselExampleFade" class="carousel slide carousel-fade galeria">
-            <div class="carousel-inner">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner gal-div">
                 <div class="carousel-item active">
                     <img class="imagen" src="../resources/images/image.jpeg" class="d-block w-100" alt="dibujo 1">
                     <h5>Nombre: Kinkou assasin</h5>

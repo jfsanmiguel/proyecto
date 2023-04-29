@@ -1,0 +1,20 @@
+/* estrategia mobile last ----maxwidth*/
+@media (max-width: 720px) {
+    .main {
+        &__video {
+            width: 100%;
+        }
+
+        &__titulo-id {
+            font-size: medium;
+        }
+
+        &__fuente-id {
+            font-size: x-small;
+        }
+
+        .row {
+            flex-direction: column;
+        }
+    }
+}

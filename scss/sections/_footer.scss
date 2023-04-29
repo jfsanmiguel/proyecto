@@ -1,0 +1,26 @@
+.footer {
+    background-color: $rosa;
+
+    &__foot {
+        justify-content: center;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__redes {
+        width: 45px;
+        margin: 7px;
+    }
+
+    &__terms {
+        display: flex;
+        justify-content: center;
+
+        p {
+            margin: 15px;
+        }
+    }
+}

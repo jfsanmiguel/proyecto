@@ -1,0 +1,80 @@
+.main {
+    &__conection {
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: center;
+    }
+
+    &__contacto {
+        grid-area: 1 / 1 / 6 / 2;
+    }
+
+    &__request {
+        grid-area: 1 / 2 / 6 / 3;
+    }
+
+    &__comun {
+        width: 120px;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    &__gif {
+        max-width: 40vw;
+    }
+
+    &__form-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    &__parte {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .info {
+        width: 13rem;
+    }
+
+    .descripcion {
+        min-height: 200px;
+        width: 13rem;
+    }
+
+    .boton {
+        background-color: $rosa;
+        color: $negro;
+        font-weight: bold;
+        width: 5rem;
+
+        &:hover {
+            background-color: $cyan;
+            color: $negro;
+            font-weight: bolder;
+            transform: scale(1.13);
+        }
+    }
+
+    @media (max-width: 720px) {
+        .main {
+            &__conection {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            &__form-flex {
+                align-items: center;
+            }
+
+            &__comun {
+                width: 60px;
+            }
+        }
+    }
+}

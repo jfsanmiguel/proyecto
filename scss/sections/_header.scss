@@ -2,6 +2,7 @@
     background-color: $blanco;
     color: $negro;
     font-family: $belleza;
+    height: 10vh;
 
     &__logo {
         width: 80px;
@@ -19,6 +20,9 @@
 @media (max-width: 720px) {
     p {
         font-size: small;
+    }
+    .header{
+        height: 10%;
     }
 
 }

@@ -1,0 +1,11 @@
+$condicion: "oculto";
+@if($condicion == "oculto"){
+    .main__encabezado{
+        visibility: hidden;
+    }
+}
+@else{
+    .main__encabezado{
+        font-weight: bolder;
+    }
+}

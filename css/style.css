@@ -4,10 +4,14 @@
   padding: 0px;
   box-sizing: border-box; }
 
+.main__encabezado {
+  visibility: hidden; }
+
 .header {
   background-color: #e7ecef;
   color: #272932;
-  font-family: "Belleza", sans-serif; }
+  font-family: "Belleza", sans-serif;
+  height: 10vh; }
   .header__logo {
     width: 80px;
     margin: 5px; }
@@ -18,11 +22,14 @@
 /* estrategia mobile last ----maxwidth*/
 @media (max-width: 720px) {
   p {
-    font-size: small; } }
+    font-size: small; }
+  .header {
+    height: 10%; } }
 
 .main {
   background-color: #272932;
-  color: #e7ecef; }
+  color: #e7ecef;
+  height: 78vh; }
   .main__encabezado {
     text-align: center;
     color: #bb342f; }
@@ -59,19 +66,21 @@
     opacity: 1; } }
 
 @media (max-width: 720px) {
-  .main__index-flex {
-    flex-direction: column;
-    justify-content: center;
-    font-size: small; }
-  .main__index-div {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-content: center; }
-  .main__img-section {
-    width: 85%;
-    margin-left: 20px; } }
+  .main {
+    height: 78%; }
+    .main__index-flex {
+      flex-direction: column;
+      justify-content: center;
+      font-size: small; }
+    .main__index-div {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      justify-content: center; }
+    .main__img-section {
+      width: 85%;
+      margin-left: 20px; } }
 
 h4 {
   margin-left: 50px; }
@@ -236,7 +245,8 @@ h4 {
     width: 60px; } }
 
 .footer {
-  background-color: #9684a1; }
+  background-color: #9684a1;
+  height: 12vh; }
   .footer__foot {
     justify-content: center; }
   .footer__social {
@@ -250,3 +260,7 @@ h4 {
     justify-content: center; }
     .footer__terms p {
       margin: 15px; }
+
+@media (max-width: 720px) {
+  .footer {
+    height: 10%; } }

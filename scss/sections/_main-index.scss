@@ -1,6 +1,7 @@
 .main {
     background-color: $negro;
     color: $blanco;
+    height: 78vh;
 
     &__encabezado {
         text-align: center;
@@ -61,6 +62,7 @@
 
 @media (max-width: 720px) {
     .main {
+        height: 78%;
         &__index-flex {
             flex-direction: column;
             justify-content: center;

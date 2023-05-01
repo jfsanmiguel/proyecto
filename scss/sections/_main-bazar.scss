@@ -27,26 +27,23 @@ h4 {
     }
 
     &__fila-1 {
-        display: flex;
-        justify-content: space-evenly;
+        @extend .fila;
         grid-area: 1 / 2 / 3 / 6;
     }
 
     &__fila-2 {
-        display: flex;
-        justify-content: space-evenly;
+        @extend .fila;
         grid-area: 3 / 2 / 5 / 6;
     }
 
     &__fila-3 {
-        display: flex;
-        justify-content: space-evenly;
+        @extend .fila;
         grid-area: 5 / 2 / 7 / 6;
-        margin-bottom: 30px;
+        margin-bottom: 3px;
     }
 
     &__item {
-        width: 50%;
+        width: 20%;
         margin-top: 20px;
         margin-bottom: 5px;
     }
@@ -101,7 +98,7 @@ h4 {
         }
 
         &__item {
-            width: 25%;
+            @include tamano-imagen(25%, 5px);
         }
     }
 }

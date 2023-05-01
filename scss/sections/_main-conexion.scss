@@ -1,29 +1,38 @@
 .main {
     &__conection {
         display: grid;
-        grid-template-columns: repeat(2, 0.5fr);
-        grid-template-rows: repeat(2, 0.5fr);
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows: repeat(4, 2fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         justify-items: center;
+
     }
 
     &__contacto {
-        grid-area: 1 / 1 / 6 / 2;
+        grid-area: 1 / 1 / 5 / 2;
+    }
+
+    &__art {
+        grid-area: 1 / 2 / 5 / 3;
     }
 
     &__request {
-        grid-area: 1 / 2 / 6 / 3;
+        grid-area: 1 / 3 / 5 / 4;
     }
 
     &__comun {
         width: 120px;
         padding: 10px;
         margin: 20px;
+
+        &:hover {
+            transform: scale(1.13);
+        }
     }
 
     &__gif {
-        max-width: 40vw;
+        width: 100px;
     }
 
     &__form-flex {
@@ -33,8 +42,8 @@
     }
 
     &__parte {
-        margin: 10px;
-        padding: 5px;
+        margin: 4px;
+        padding: 2px;
     }
 
     .info {
@@ -42,7 +51,7 @@
     }
 
     .descripcion {
-        min-height: 200px;
+        min-height: 100px;
         width: 13rem;
     }
 
@@ -54,7 +63,7 @@
 
         &:hover {
             background-color: $cyan;
-            color: $negro;
+            color: $blanco;
             font-weight: bolder;
             transform: scale(1.13);
         }
@@ -70,10 +79,15 @@
 
             &__form-flex {
                 align-items: center;
+
             }
 
             &__comun {
                 width: 60px;
+            }
+
+            &__parte {
+                margin: 6px;
             }
         }
     }

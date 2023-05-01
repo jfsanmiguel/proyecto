@@ -1,0 +1,12 @@
+//extend
+.fila{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+//mixin
+@mixin tamano-imagen ($ancho , $borde){
+    width: $ancho;
+    box-shadow: $borde;
+}

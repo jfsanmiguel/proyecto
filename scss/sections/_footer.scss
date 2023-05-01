@@ -1,6 +1,5 @@
 .footer {
     background-color: $rosa;
-    height: 12vh;
 
     &__foot {
         justify-content: center;
@@ -26,9 +25,9 @@
     }
 }
 
-@media (max-width: 720px){
-    .footer{
+@media (max-width: 720px) {
+    .footer {
         height: 10%;
     }
-    
+
 }

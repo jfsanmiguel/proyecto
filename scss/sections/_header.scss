@@ -2,10 +2,9 @@
     background-color: $blanco;
     color: $negro;
     font-family: $belleza;
-    height: 10vh;
 
     &__logo {
-        width: 80px;
+        @include tamano-imagen(80px, 1px);
         margin: 5px;
 
         &:hover {
@@ -21,7 +20,8 @@
     p {
         font-size: small;
     }
-    .header{
+
+    .header {
         height: 10%;
     }
 
